@@ -1,3 +1,33 @@
-h1 {
-    background-color: black;
+$blue-sapphire: #2e5266;
+$light-gray: #6e8898;
+$cadet-grey: #9fb1bc;
+$timberwolf: #d3d0cb;
+$amber: #ff7f11;
+$off-white: #f3f3f3;
+
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#sidebar {
+    background-color: $light-gray;
+}
+
+#main {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    #header {
+    }
+    #content {
+        background-color: $off-white;
+    }
 }

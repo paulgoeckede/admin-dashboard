@@ -1,4 +1,31 @@
-h1 {
-  background-color: black;
+:root {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+}
+
+#sidebar {
+  background-color: #6e8898;
+}
+
+#main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 4fr;
+      grid-template-rows: 1fr 4fr;
+}
+
+#main #content {
+  background-color: #f3f3f3;
 }
 /*# sourceMappingURL=styles.css.map */
