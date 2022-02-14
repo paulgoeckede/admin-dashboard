@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Admin Dashboard</title>
         <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="rotate-animation.css" />
     </head>
     <body>
         <div id="sidebar">
@@ -88,6 +89,10 @@
                     />
                     <h2>Privacy</h2>
                 </div>
+                <p id="credit">
+                    All Icons from
+                    <a href="https://icons8.de/" target="_blank">Icons8</a>
+                </p>
             </div>
         </div>
         <main id="main">
@@ -102,7 +107,12 @@
                     />
                 </div>
                 <div id="profile">
-                    <img src="./assets/alarm.png" alt="Notification bell" />
+                    <img
+                        src="./assets/alarm.png"
+                        alt="Notification bell"
+                        class="shake-rotate"
+                        id="notification"
+                    />
                     <img
                         src="./assets/avatar.png"
                         alt="Profile avatar"
@@ -129,7 +139,230 @@
                     </button>
                 </div>
             </header>
-            <div id="content"></div>
+            <div id="content">
+                <div id="content-left">
+                    <h4>Your Projects</h4>
+                    <div id="project-div">
+                        <div class="project">
+                            <h5>Super Cool Project</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Eius excepturi a blanditiis
+                                pariatur. Tempore dolor, ipsam magnam sit
+                                reiciendis dicta aut odit id expedita vero eos
+                                recusandae quis nihil minima!
+                            </p>
+                            <div class="project-icons">
+                                <img
+                                    src="./assets/star.png"
+                                    alt="Add to Favourites icon"
+                                />
+                                <img
+                                    src="./assets/watch.png"
+                                    alt="Add to watchlist icon"
+                                />
+                                <img
+                                    src="./assets/share.png"
+                                    alt="Share icon"
+                                />
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h5>Less Cool Project</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Facere ab consequuntur
+                                aspernatur harum corporis sed ea ex, aperiam
+                                voluptatibus voluptatum cupiditate praesentium.
+                                Architecto qui magnam est quaerat asperiores
+                                nesciunt corporis, a fugiat doloribus
+                                voluptatibus quidem ab saepe nisi! Itaque,
+                                aspernatur.
+                            </p>
+                            <div class="project-icons">
+                                <img
+                                    src="./assets/star.png"
+                                    alt="Add to Favourites icon"
+                                />
+                                <img
+                                    src="./assets/watch.png"
+                                    alt="Add to watchlist icon"
+                                />
+                                <img
+                                    src="./assets/share.png"
+                                    alt="Share icon"
+                                />
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h5>Impossible App</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nemo iusto distinctio
+                                consectetur est quibusdam laborum cupiditate
+                                delectus fuga enim libero.
+                            </p>
+                            <div class="project-icons">
+                                <img
+                                    src="./assets/star.png"
+                                    alt="Add to Favourites icon"
+                                />
+                                <img
+                                    src="./assets/watch.png"
+                                    alt="Add to watchlist icon"
+                                />
+                                <img
+                                    src="./assets/share.png"
+                                    alt="Share icon"
+                                />
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h5>Easy Peasy App</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Voluptatum exercitationem ex
+                                perspiciatis? Quis quod dicta, animi quibusdam
+                                iusto incidunt aperiam omnis assumenda numquam
+                                quaerat architecto. Voluptates cupiditate quos
+                                sit. Sed?
+                            </p>
+                            <div class="project-icons">
+                                <img
+                                    src="./assets/star.png"
+                                    alt="Add to Favourites icon"
+                                />
+                                <img
+                                    src="./assets/watch.png"
+                                    alt="Add to watchlist icon"
+                                />
+                                <img
+                                    src="./assets/share.png"
+                                    alt="Share icon"
+                                />
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h5>Ad Blocker</h5>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Placeat eaque perspiciatis
+                                illum officia at, corrupti quibusdam quis
+                                necessitatibus, inventore iure sit, ex cum
+                                expedita possimus. Illum velit hic consectetur
+                                eum.
+                            </p>
+                            <div class="project-icons">
+                                <img
+                                    src="./assets/star.png"
+                                    alt="Add to Favourites icon"
+                                />
+                                <img
+                                    src="./assets/watch.png"
+                                    alt="Add to watchlist icon"
+                                />
+                                <img
+                                    src="./assets/share.png"
+                                    alt="Share icon"
+                                />
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h5>Money Maker</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Debitis facere quis tempore
+                                exercitationem ipsa vero. Voluptate cum saepe,
+                                reiciendis assumenda eius facilis ducimus rerum
+                                modi excepturi obcaecati accusantium nam
+                                possimus?
+                            </p>
+                            <div class="project-icons">
+                                <img
+                                    src="./assets/star.png"
+                                    alt="Add to Favourites icon"
+                                />
+                                <img
+                                    src="./assets/watch.png"
+                                    alt="Add to watchlist icon"
+                                />
+                                <img
+                                    src="./assets/share.png"
+                                    alt="Share icon"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-right">
+                    <div id="announcements-div">
+                        <h4>Announcements</h4>
+                        <div id="announcements">
+                            <div class="announcement">
+                                <h6>Site Maintenance</h6>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Corrupti corporis
+                                    distinctio mollitia eos itaque neque minus
+                                    porro ad officia autem.
+                                </p>
+                            </div>
+                            <div class="announcement">
+                                <h6>Community Share Day</h6>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Corrupti corporis
+                                    distinctio mollitia eos itaque neque minus
+                                    porro ad officia autem.
+                                </p>
+                            </div>
+                            <div class="announcement">
+                                <h6>Updated Privacy Policy</h6>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Corrupti corporis
+                                    distinctio mollitia eos itaque neque minus
+                                    porro ad officia autem.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="trending-div">
+                        <h4>Trending</h4>
+                        <div id="trending">
+                            <div class="trending">
+                                <div class="avatar" id="avatar-one"></div>
+                                <div class="trending-text">
+                                    <h6>@tegan</h6>
+                                    <p>World Peace Builder</p>
+                                </div>
+                            </div>
+                            <div class="trending">
+                                <div class="avatar" id="avatar-two"></div>
+                                <div class="trending-text">
+                                    <h6>@morgan</h6>
+                                    <p>Super Cool</p>
+                                </div>
+                            </div>
+                            <div class="trending">
+                                <div class="avatar" id="avatar-three"></div>
+                                <div class="trending-text">
+                                    <h6>@kendall</h6>
+                                    <p>Life Changing App</p>
+                                </div>
+                            </div>
+                            <div class="trending">
+                                <div class="avatar" id="avatar-four"></div>
+                                <div class="trending-text">
+                                    <h6>@alex</h6>
+                                    <p>No Traffic Maker</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="copyright">Copyright &copy; Paul Göckede</p>
+            </div>
         </main>
     </body>
 </html>

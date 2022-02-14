@@ -8,7 +8,10 @@
 
 body {
   margin: 0;
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 4fr;
@@ -27,6 +30,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
+  position: relative;
 }
 
 #sidebar #dashboard-header {
@@ -91,6 +95,20 @@ body {
 #sidebar #dashboard-btm div img,
 #sidebar #dashboard-btm div h2 {
   cursor: pointer;
+}
+
+#sidebar #credit {
+  font-size: 0.6rem;
+  text-align: center;
+  opacity: 0.7;
+  position: absolute;
+  bottom: 2px;
+  right: 4px;
+}
+
+#sidebar #credit a {
+  text-decoration: none;
+  color: inherit;
 }
 
 #main {
@@ -161,6 +179,11 @@ body {
   height: 70px;
   width: 70px;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+#main #header #profile #notification {
+  cursor: pointer;
 }
 
 #main #header #greeting-div {
@@ -232,5 +255,194 @@ body {
 
 #main #content {
   background-color: #f3f3f3;
+  padding: 30px 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  position: relative;
+}
+
+#main #content #content-left h4 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#main #content #content-left #project-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  padding-right: 10px;
+}
+
+#main #content #content-left #project-div .project {
+  max-width: 400px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 300px;
+  overflow: auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 3px 3px 13px -6px rgba(0, 0, 0, 0.79);
+          box-shadow: 3px 3px 13px -6px rgba(0, 0, 0, 0.79);
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+#main #content #content-left #project-div .project h5 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#main #content #content-left #project-div .project p {
+  opacity: 0.7;
+}
+
+#main #content #content-left #project-div .project .project-icons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+#main #content #content-left #project-div .project .project-icons img {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+#main #content #content-left #project-div .project .project-icons img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#main #content #content-left #project-div .project:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+#main #content #content-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 70px;
+  padding: 0px 10px;
+}
+
+#main #content #content-right h4 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+#main #content #content-right #announcements {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 3px 3px 13px -6px rgba(0, 0, 0, 0.79);
+          box-shadow: 3px 3px 13px -6px rgba(0, 0, 0, 0.79);
+}
+
+#main #content #content-right #announcements .announcement h6 {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#main #content #content-right #announcements .announcement p {
+  font-size: 0.8rem;
+  padding-bottom: 15px;
+  border-bottom: 1px solid grey;
+  opacity: 0.7;
+}
+
+#main #content #content-right #trending {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  -webkit-box-shadow: 3px 3px 13px -6px rgba(0, 0, 0, 0.79);
+          box-shadow: 3px 3px 13px -6px rgba(0, 0, 0, 0.79);
+}
+
+#main #content #content-right #trending .trending {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main #content #content-right #trending .trending .avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#main #content #content-right #trending .trending #avatar-one {
+  background-color: #a8d8db;
+}
+
+#main #content #content-right #trending .trending #avatar-two {
+  background-color: #cdb9df;
+}
+
+#main #content #content-right #trending .trending #avatar-three {
+  background-color: #dbc66a;
+}
+
+#main #content #content-right #trending .trending #avatar-four {
+  background-color: #9edd91;
+}
+
+#main #content #content-right #trending .trending h6 {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+#main #content #content-right #trending .trending p {
+  font-size: 0.8rem;
+}
+
+#main #content .copyright {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 0.8rem;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=styles.css.map */

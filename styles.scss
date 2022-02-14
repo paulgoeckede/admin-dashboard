@@ -15,7 +15,8 @@ $off-white: #f3f3f3;
 
 body {
     margin: 0;
-    height: 100vh;
+    height: fit-content;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
     font-family: "Poppins", sans-serif;
@@ -27,6 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    position: relative;
     #dashboard-header {
         margin: 15px auto;
         display: flex;
@@ -67,6 +69,18 @@ body {
             h2 {
                 cursor: pointer;
             }
+        }
+    }
+    #credit {
+        font-size: 0.6rem;
+        text-align: center;
+        opacity: 0.7;
+        position: absolute;
+        bottom: 2px;
+        right: 4px;
+        a {
+            text-decoration: none;
+            color: inherit;
         }
     }
 }
@@ -110,6 +124,10 @@ body {
                 height: 70px;
                 width: 70px;
                 border-radius: 50%;
+                cursor: pointer;
+            }
+            #notification {
+                cursor: pointer;
             }
         }
         #greeting-div {
@@ -154,5 +172,143 @@ body {
     }
     #content {
         background-color: $off-white;
+        padding: 30px 20px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        position: relative;
+        #content-left {
+            h4 {
+                font-weight: 500;
+                font-size: 1.3rem;
+                letter-spacing: 2px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            #project-div {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: 30px;
+                align-content: center;
+                justify-content: center;
+                justify-items: center;
+                padding-right: 10px;
+                .project {
+                    max-width: 400px;
+                    height: fit-content;
+                    min-height: 300px;
+                    overflow: auto;
+                    background-color: white;
+                    border-radius: 20px;
+                    padding: 20px;
+                    position: relative;
+                    box-shadow: 3px 3px 13px -6px rgba(0, 0, 0, 0.79);
+                    transition: all 0.15s;
+                    h5 {
+                        font-size: 1.2rem;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        opacity: 0.7;
+                    }
+                    .project-icons {
+                        position: absolute;
+                        bottom: 10px;
+                        right: 10px;
+                        display: flex;
+                        gap: 10px;
+                        img {
+                            height: 24px;
+                            width: 24px;
+                            cursor: pointer;
+                            transition: 0.15s;
+                            &:hover {
+                                transform: scale(1.05);
+                            }
+                        }
+                    }
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+            }
+        }
+        #content-right {
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+            padding: 0px 10px;
+            h4 {
+                font-weight: 500;
+                font-size: 1.3rem;
+                letter-spacing: 2px;
+                margin-bottom: 10px;
+            }
+            #announcements {
+                background-color: white;
+                border-radius: 20px;
+                padding: 20px;
+                box-shadow: 3px 3px 13px -6px rgba(0, 0, 0, 0.79);
+
+                .announcement {
+                    h6 {
+                        font-size: 0.9rem;
+                        margin-top: 10px;
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        font-size: 0.8rem;
+                        padding-bottom: 15px;
+                        border-bottom: 1px solid grey;
+                        opacity: 0.7;
+                    }
+                }
+            }
+            #trending {
+                background-color: white;
+                border-radius: 20px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                box-shadow: 3px 3px 13px -6px rgba(0, 0, 0, 0.79);
+                .trending {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    .avatar {
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                    #avatar-one {
+                        background-color: #a8d8db;
+                    }
+                    #avatar-two {
+                        background-color: #cdb9df;
+                    }
+                    #avatar-three {
+                        background-color: #dbc66a;
+                    }
+                    #avatar-four {
+                        background-color: #9edd91;
+                    }
+                    h6 {
+                        font-size: 0.9rem;
+                        cursor: pointer;
+                    }
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        .copyright {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
     }
 }
