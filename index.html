@@ -8,9 +8,127 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <div id="sidebar"></div>
+        <div id="sidebar">
+            <div id="dashboard-header">
+                <img src="./assets/dashboard.png" alt="Dashboard Icon" />
+                <h1>Dashboard</h1>
+            </div>
+            <div id="dashboard-top">
+                <div id="home">
+                    <img
+                        src="./assets/home.png"
+                        alt="Home icon"
+                        class="small"
+                    />
+                    <h2>Home</h2>
+                </div>
+                <div id="profile">
+                    <img
+                        src="./assets/account.png"
+                        alt="Profile Icon"
+                        class="small"
+                    />
+                    <h2>Profile</h2>
+                </div>
+                <div id="messages">
+                    <img
+                        src="./assets/message.png"
+                        alt="Message bubble Icon"
+                        class="small"
+                    />
+                    <h2>Messages</h2>
+                </div>
+                <div id="history">
+                    <img
+                        src="./assets/clock.png"
+                        alt="Clock icon"
+                        class="small"
+                    />
+                    <h2>History</h2>
+                </div>
+                <div id="tasks">
+                    <img
+                        src="./assets/tasks.png"
+                        alt="Tasks icon"
+                        class="small"
+                    />
+                    <h2>Tasks</h2>
+                </div>
+                <div id="communities">
+                    <img
+                        src="./assets/community.png"
+                        alt="Community icon"
+                        class="small"
+                    />
+                    <h2>Community</h2>
+                </div>
+            </div>
+            <div id="dashboard-btm">
+                <div id="settings">
+                    <img
+                        src="./assets/settings.png"
+                        alt="Settings gear icon"
+                        class="small"
+                    />
+                    <h2>Settings</h2>
+                </div>
+                <div id="support">
+                    <img
+                        src="./assets/question.png"
+                        alt="Support icon"
+                        class="small"
+                    />
+                    <h2>Support</h2>
+                </div>
+                <div id="privacy">
+                    <img
+                        src="./assets/privacy.png"
+                        alt="Privacy icon"
+                        class="small"
+                    />
+                    <h2>Privacy</h2>
+                </div>
+            </div>
+        </div>
         <main id="main">
-            <header id="header"></header>
+            <header id="header">
+                <div id="searchbar">
+                    <label for="search">Search</label>
+                    <input
+                        type="search"
+                        id="search"
+                        name="search"
+                        placeholder="Search.."
+                    />
+                </div>
+                <div id="profile">
+                    <img src="./assets/alarm.png" alt="Notification bell" />
+                    <img
+                        src="./assets/avatar.png"
+                        alt="Profile avatar"
+                        id="profile-pic"
+                    />
+                    <h3>Lisa Oakley</h3>
+                </div>
+                <div id="greeting-div">
+                    <img src="./assets/avatar.png" alt="Profile avatar" />
+                    <div id="greeting-text">
+                        <p>Hi there,</p>
+                        <h3>Lisa Oakley (@loakley)</h3>
+                    </div>
+                </div>
+                <div id="btn-div">
+                    <button type="button" id="new-btn" class="header-btn">
+                        New
+                    </button>
+                    <button type="button" id="upload-btn" class="header-btn">
+                        Upload
+                    </button>
+                    <button type="button" id="share-btn" class="header-btn">
+                        Share
+                    </button>
+                </div>
+            </header>
             <div id="content"></div>
         </main>
     </body>
